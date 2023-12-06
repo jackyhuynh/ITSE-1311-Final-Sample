@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #6982dd; /* Light grey background */
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333; /* Dark grey text */
+  }
+  
+  #dashboard {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgb(253, 251, 251); /* White background */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+  }
+  
+  #courses-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .course {
+    background-color: #fdfcfc; /* Light grey background for each course item */
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(17, 16, 16); /* Light grey border */
+  }
+  
+  .course h2 {
+    margin-top: 0;
+    color: #333; /* Dark grey text */
+  }
+  
+  .course p {
+    color: #666; /* Slightly darker grey text */
+  }
+  
+  button {
+    background-color: #333; /* Dark grey button background */
+    color: #fff; /* White text for buttons */
+    cursor: pointer;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 3px;
+  }
+  
+  button:hover {
+    background-color: #555; /* Darker grey on hover */
+  }

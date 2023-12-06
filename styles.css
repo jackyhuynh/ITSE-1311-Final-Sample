@@ -1,0 +1,51 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  color: #fff; 
+  
+  background-image: url('mountains.jpeg'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+  
+  
+  h1 {
+    text-align: center;
+    color: #fff; 
+  }
+  
+  #login-section,
+  #register-section,
+  #logout-section {
+    width: 300px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff; 
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  input[type="text"],
+  input[type="password"],
+  button {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc; 
+    border-radius: 3px;
+  }
+  
+  button {
+    background-color: #333; 
+    color: #fff; 
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #555;
+  }

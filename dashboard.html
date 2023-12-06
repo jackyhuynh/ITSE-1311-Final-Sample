@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="dashStyles.css"> 
+  <script src="Dash.js"></script> 
+</head>
+<body>
+
+  <div id="dashboard">
+    <h1>Dashboard</h1>
+    <ul id="courses-list">
+       <li class="course">
+        <h2>Mathematics</h2>
+        <p>Description: Introduction to Mathematics</p>
+        <p>Available Slots: 15</p>
+        <button id="math-register">Register</button> 
+        </li>
+      <li class="course">
+        <h2>History</h2>
+        <p>Description: Introduction to History</p>
+        <p>Available Slots: 20</p>
+        <button>Register</button>
+      </li>
+      <li class="course">
+        <h2>Science</h2>
+        <p>Description: Introduction to Science</p>
+        <p>Available Slots: 25</p>
+        <button>Register</button>
+      </li>
+      <li class="course">
+        <h2>English</h2>
+        <p>Description: Introduction to English</p>
+        <p>Available Slots: 21</p>
+        <button>Register</button>
+      </li>
+      <li class="course">
+        <h2>Psychology</h2>
+        <p>Description: Introduction to Psychology</p>
+        <p>Available Slots: 18</p>
+        <button>Register</button>
+      </li>
+      <li class="course">
+        <h2>Business</h2>
+        <p>Description: Introduction to Business</p>
+        <p>Available Slots: 22</p>
+        <button>Register</button>
+      </li>
+      <li class="course">
+        <h2>Computer Science</h2>
+        <p>Description: Introduction to Computer Science</p>
+        <p>Available Slots: 20</p>
+        <button>Register</button>
+      </li>
+      <li class="course">
+        <h2>Spanish</h2>
+        <p>Description: Introduction to Spanish Language</p>
+        <p>Available Slots: 16</p>
+        <button>Register</button>
+      </li>
+      <li class="course">
+        <h2>French</h2>
+        <p>Description: Introduction to French Language</p>
+        <p>Available Slots: 18</p>
+        <button>Register</button>
+      </li>
+      <li class="course">
+        <h2>Environmental Science</h2>
+        <p>Description: Introduction to Environmental Science</p>
+        <p>Available Slots: 20</p>
+        <button>Register</button>
+      </li>
+      <li class="course">
+        <h2>Sociology</h2>
+        <p>Description: Introduction to Sociology</p>
+        <p>Available Slots: 20</p>
+        <button>Register</button>
+      </li>
+      
+    </ul>
+  </div>
+
+</body>
+</html>
+
+  <script>
+      
+    
+    function registerCourse(courseId) {
+
+      console.log('Registered for course:', courseId);
+    }
+
+    
+    fetch('courses.json')
+      .then(response => response.json())
+      .then(courses => {
+        const coursesList = document.getElementById('courses-list');
+
+        courses.forEach(course => {
+          const li = document.createElement('li');
+          li.innerHTML = `
+            <div class="course-info">
+              <h3>${course.title}</h3>
+              <p>${course.description}</p>
+              <p>Available Slots: ${course.availableSlots}</p>
+            </div>
+            <button onclick="registerCourse(${course.id})">Register</button>
+          `;
+          coursesList.appendChild(li);
+        });
+      });
+    
+  </script>
+</body>
+</html>
