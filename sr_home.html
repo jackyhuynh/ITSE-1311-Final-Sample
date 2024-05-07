@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Final Project School Registration</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="sr_reset.css" rel="stylesheet" />
+    <link href="sr_layout.css" rel="stylesheet" />
+    <script src="sr_database.js" async></script>
+    <script src="sr_registration.js" async></script>
+
+</head>
+<body>
+    <header>
+        <h1>School Registration System</h1>
+        <div id="username"></div>
+        <button class="logout-btn" id="logoutButton">Log Out</button>
+    </header>
+    <article id="login">
+        <div class="container">
+            <div class="input-group">
+                <label for="emailBox">Email:</label>
+                <input type="text" id="emailBox"/>
+            </div>
+            <div class="input-group">
+                <label for="passBox">Password:</label>
+                <input type="text" id="passBox"/>
+            </div>
+            <button class="submit-btn" id="loginButton">Submit</button>
+        </div>>
+    </article>
+    <div class="containerCourse" id="main">
+        <div class="sectionCourse" id="dashboard">
+            <h2>Dashboard</h2>
+            <div id="students"></div>
+        </div>
+        <div class="sectionCourse" id="courseLibrary">
+            <h2>Course Library</h2>
+            <div id="courses"></div>
+        </div>
+    </div>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
