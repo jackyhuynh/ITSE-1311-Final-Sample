@@ -1,11 +1,11 @@
 # FINAL PROJECT
 **To run the project locally:**
-- Right click the src_home.html.
+- Right click the index.html.
 - Click "Reveal in Finder".
 - Double click the file.
 - Log in as one of the users in the database.
 
-The database is stored in localStorage (sr_database.js). You can do the following things:
+The database is stored in localStorage (database.js). You can do the following things:
 
 - You can log in.
 - You can log out.
